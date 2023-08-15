@@ -1,4 +1,4 @@
-import { Card, CardBody, Image, Link, Stack, Text, textDecoration } from '@chakra-ui/react';
+import { Card, CardBody, Image, Link, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const ProductCard = ({ title, price, img, link }) => {
@@ -18,7 +18,7 @@ const ProductCard = ({ title, price, img, link }) => {
 						borderBottomRadius={'none'}
 					/>
 					<Stack mt="1" spacing="1" padding={'3'}>
-						<Text fontSize={'lg'} fontWeight={'medium'}>
+						<Text color="white" fontSize={'lg'} fontWeight={'medium'}>
 							{title}
 						</Text>
 						<Text color="yellow.500" fontSize="md">
