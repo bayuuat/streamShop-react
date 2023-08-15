@@ -11,16 +11,16 @@ import NotFound from './pages/404';
 import Main from './pages/Main';
 
 function App() {
-	const [count, setCount] = useState(0);
+	const [search, setSearch] = useState('');
 
 	return (
 		<>
-			<Context.Provider value={[count, setCount]}>
+			<Context.Provider value={[search, setSearch]}>
 				<BrowserRouter>
 					<Switch>
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
-						<Route path="/video" component={Stream} />
+						<Route path="/video/:id" component={Stream} />
 						<Route exact path="/" component={Main} />
 						<Route path="*" component={NotFound} />
 					</Switch>
