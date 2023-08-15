@@ -3,7 +3,6 @@ import React from 'react';
 
 const ProductCard = ({ title, price, img, link }) => {
 	const priceFormat = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(Number(price));
-	console.log(price);
 
 	return (
 		<Link href={`${link}`} _hover={{textDecoration: "none"}} isExternal>

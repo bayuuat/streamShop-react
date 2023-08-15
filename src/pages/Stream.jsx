@@ -56,7 +56,6 @@ const Stream = () => {
 			const response = await fetch(`${apiUrl}/api/products?${args}`);
 
 			const data = await response.json();
-			console.log(data);
 			setProduct(data.data);
 		} catch (error) {
 			console.error('Error:', error.message);
